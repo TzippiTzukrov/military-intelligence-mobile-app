@@ -1,17 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Military Intelligence Mobile App</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/scanner.css">
-    <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/mobile.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SIGINT OPS</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/scanner.css" />
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
 </head>
 <body>
-    
+
+  <div class="app">
+
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+      <div class="header__logo">
+        <img class="icon icon--shield" src="images/icons/shield.svg" alt="" />
+      </div>
+
+      <h1 class="header__title">SIGINT OPS</h1>
+
+      <div class="header__badge">
+        <span class="header__badge-dot"></span>
+        <span class="header__badge-text">SECURE • ONLINE</span>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <!-- ========== HERO (central box) ========== -->
+      <section class="hero">
+
+        <!-- Left: radar scanner -->
+        <div class="hero__scanner">
+          <div class="radar">
+            <div class="radar__line radar__line--vertical"></div>
+            <div class="radar__line radar__line--horizontal"></div>
+            <div class="radar__sweep"></div>
+            <span class="radar__blip radar__blip--1"></span>
+            <span class="radar__blip radar__blip--2"></span>
+            <span class="radar__blip radar__blip--3"></span>
+          </div>
+        </div>
+
+        <!-- Right: numbers + text -->
+        <div class="hero__stats">
+          <div class="stat">
+            <span class="stat__number">24</span>
+            <span class="stat__label">ACTIVE SIGNALS</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">07</span>
+            <span class="stat__label">PRIORITY ALERTS</span>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ========== ACTION BUTTONS ========== -->
+      <section class="actions">
+        <button class="btn" type="button">
+          <img class="icon icon--bolt" src="images/icons/zap.svg" alt="" />
+          <span class="btn__text">New Brief</span>
+        </button>
+        <button class="btn" type="button">
+          <img class="icon icon--code" src="images/icons/code.svg" alt="" />
+          <span class="btn__text">Decode</span>
+        </button>
+        <button class="btn" type="button">
+          <img class="icon icon--drone" src="images/icons/rocket.svg" alt="" />
+          <span class="btn__text">Request Drone</span>
+        </button>
+      </section>
+
+      <!-- ========== CARDS ========== -->
+      <!-- card--green / card--yellow = border color; badge--critical/high/medium = tag color -->
+      <section class="cards">
+
+        <article class="card card--green">
+          <div class="card__top">
+            <span class="badge badge--critical">CRITICAL</span>
+            <span class="card__status">In Progress</span>
+          </div>
+          <h2 class="card__title">Operation Nightfall</h2>
+          <div class="card__progress">
+            <div class="progress"><div class="progress__fill" style="--value: 65%"></div></div>
+            <span class="card__percent">65%</span>
+          </div>
+        </article>
+
+        <article class="card card--yellow">
+          <div class="card__top">
+            <span class="badge badge--high">HIGH</span>
+            <span class="card__status">Analyzing</span>
+          </div>
+          <h2 class="card__title">Signal Intercept Alpha</h2>
+          <div class="card__progress">
+            <div class="progress"><div class="progress__fill" style="--value: 40%"></div></div>
+            <span class="card__percent">40%</span>
+          </div>
+        </article>
+
+        <article class="card card--green">
+          <div class="card__top">
+            <span class="badge badge--medium">MEDIUM</span>
+            <span class="card__status">Pending</span>
+          </div>
+          <h2 class="card__title">Asset Recovery</h2>
+          <div class="card__progress">
+            <div class="progress"><div class="progress__fill" style="--value: 15%"></div></div>
+            <span class="card__percent">15%</span>
+          </div>
+        </article>
+
+        <article class="card card--yellow">
+          <div class="card__top">
+            <span class="badge badge--high">HIGH</span>
+            <span class="card__status">Active</span>
+          </div>
+          <h2 class="card__title">Cyber Defense Grid</h2>
+          <div class="card__progress">
+            <div class="progress"><div class="progress__fill" style="--value: 80%"></div></div>
+            <span class="card__percent">80%</span>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- ========== RED STATUS BAR ========== -->
+      <section class="threat" role="alert">
+        <span class="threat__dot"></span>
+        <span class="threat__text">THREAT DETECTED</span>
+      </section>
+
+    </main>
+
+    <!-- ========== BOTTOM NAV ========== -->
+    <nav class="nav">
+      <a href="#" class="nav__item nav__item--active">
+        <img class="icon icon--pulse" src="images/icons/activity.svg" alt="" />
+        <span class="nav__label">Dashboard</span>
+      </a>
+      <a href="#" class="nav__item">
+        <img class="icon icon--feed" src="images/icons/radio.svg" alt="" />
+        <span class="nav__label">Feed</span>
+      </a>
+      <a href="#" class="nav__item">
+        <img class="icon icon--doc" src="images/icons/file-text.svg" alt="" />
+        <span class="nav__label">Brief</span>
+      </a>
+    </nav>
+
+    <!-- Floating help button (bottom-right corner) -->
+    <button class="help-btn" type="button" aria-label="Help">?</button>
+
+  </div>
+
 </body>
 </html>

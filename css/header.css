@@ -1,1 +1,77 @@
 /* header */
+header {
+  background-color: #09090B;
+  border-bottom: 1px #282832 solid;
+  margin-top: 0;
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+}
+
+header:hover {
+box-shadow: 0   10px   0.8rem   -0.5rem   #40cf6b33;}
+
+
+.header__title {
+  background-color: transparent;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  color: #11D24B;
+}
+
+.icon--shield {
+  background-color: #11D24B;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+.header__logo {
+  background-color: transparent;
+}
+
+.icon--shield:hover {
+  box-shadow: 0 0 0.8rem #11D24B;
+}
+
+.header__badge {
+  border: 3px #11D24B solid;
+  background-color: #11d24b30;
+  opacity: 80%;
+  border-radius: 25px;
+  padding: 7px 12px;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #11D24B;
+}
+
+.header__badge:hover {
+  background-color: #15d34e47;
+}
+
+.header__badge-dot {
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: #11d24bb4;
+  margin: 1px 3px;
+  animation: flash 1s ease infinite alternate;
+}
+
+@keyframes flash {
+  from {
+    background-color: #11d24b86;
+  }
+
+  to {
+    background-color: #33ed6bde;
+  }
+}
+
+.header__badge-text {
+  background-color: transparent;
+}
