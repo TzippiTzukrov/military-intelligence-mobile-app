@@ -24,7 +24,7 @@
   transform: translateY(-4px);
 }
 
-.icon {
+.action .icon {
   margin-right: 10px;
   margin-left: -5px;
   display: inline-block;
