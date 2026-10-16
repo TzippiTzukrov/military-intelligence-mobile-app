@@ -13,8 +13,8 @@ header {
 }
 
 header:hover {
-box-shadow: 0   10px   0.8rem   -0.5rem   #40cf6b33;}
-
+  box-shadow: 0 10px 0.8rem -0.5rem #40cf6b33;
+}
 
 .header__title {
   background-color: transparent;
@@ -27,14 +27,16 @@ box-shadow: 0   10px   0.8rem   -0.5rem   #40cf6b33;}
   background-color: #11D24B;
   border-radius: 100%;
   padding: 5px;
-}
-
-.header__logo {
-  background-color: transparent;
+  transition: transform 0.5s ease;
 }
 
 .icon--shield:hover {
   box-shadow: 0 0 0.8rem #11D24B;
+  transform: rotate(180deg);
+}
+
+.header__logo {
+  background-color: transparent;
 }
 
 .header__badge {
