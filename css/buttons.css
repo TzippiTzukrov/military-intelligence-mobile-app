@@ -24,24 +24,9 @@
   transform: translateY(-4px);
 }
 
-.actions > .btn > .icon {
-  margin-right: 10px;
-  margin-left: -5px;
-  display: inline-block;
+.btn .icon {
   width: 1rem;
   height: 1rem;
-  background-color: #A6A2AE;
+  margin-right: 10px;
+  margin-left: -5px;
 }
-
-.icon--bolt {
-  mask: url(../images/icons/zap.svg) no-repeat center / contain;
-}
-
-.icon--code {
-  mask: url(../images/icons/code.svg) no-repeat center / contain;
-}
-
-.icon--drone {
-  mask: url(../images/icons/rocket.svg) no-repeat center / contain;
-}
-
