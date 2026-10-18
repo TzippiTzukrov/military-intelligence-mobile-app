@@ -1,7 +1,5 @@
-/* mobile */
 @media (max-width: 768px) {
 
-  /* רוחב: כמעט כל המסך במקום 75% */
   header,
   .hero,
   .actions,
@@ -23,7 +21,6 @@
     font-size: 0.6rem;
   }
 
-  /* ציר Y על חשבון X: הכול בטור */
   .hero {
     flex-direction: column;
     gap: 1.5rem;

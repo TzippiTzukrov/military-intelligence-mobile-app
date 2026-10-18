@@ -1,4 +1,3 @@
-/* header */
 header {
   background-color: #09090B;
   border-bottom: 1px #282832 solid;
@@ -9,7 +8,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 15px;
+  padding: 18px 15px;
 }
 
 header:hover {
