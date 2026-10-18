@@ -1,1 +1,108 @@
-/* mobile - media queries */
+/* mobile */
+@media (max-width: 768px) {
+
+  /* רוחב: כמעט כל המסך במקום 75% */
+  header,
+  .hero,
+  .actions,
+  .cards,
+  .threat {
+    width: 92%;
+  }
+
+  .header {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .header__title {
+    font-size: 1.4rem;
+  }
+
+  .header__badge {
+    font-size: 0.6rem;
+  }
+
+  /* ציר Y על חשבון X: הכול בטור */
+  .hero {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .actions,
+  .cards {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .hero__scanner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .radar {
+    width: 75vw;
+    max-width: 18rem;
+  }
+
+  .hero__stats {
+    align-items: center;
+    text-align: center;
+  }
+
+  .stat__number {
+    font-size: 2.8rem;
+  }
+
+  .stat__label {
+    font-size: 1rem;
+  }
+
+  .btn {
+    justify-content: center;
+    font-size: 1.1rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .btn .icon {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  .card__title {
+    font-size: 1.2rem;
+  }
+
+  .card__status,
+  .card__percent,
+  .badge {
+    font-size: 1rem;
+  }
+
+  .threat__text {
+    font-size: 1.2rem;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  .nav__item {
+    font-size: 0.9rem;
+  }
+
+  .nav__item:last-child {
+    margin-right: 3rem;
+  }
+
+  .nav__item .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  body {
+    padding-bottom: 7rem;
+  }
+}
