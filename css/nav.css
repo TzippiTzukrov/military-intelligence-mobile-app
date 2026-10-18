@@ -1,1 +1,85 @@
 /* nav */
+.nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-top: 0.5rem;
+  background-color: #09090B;
+  border-top: 1px solid #282832;
+}
+
+.nav__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.4rem 1.5rem 0.3rem;
+  color: #625F6B;
+  font-size: 0.7rem;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.nav__item .icon {
+  width: 1.1rem;
+  height: 1.1rem;
+  filter: invert(11%) sepia(33%) saturate(602%) hue-rotate(214deg) brightness(158%) contrast(39%);
+  transition: filter 0.3s, transform 0.25s ease;
+}
+
+.nav__label {
+  transition: transform 0.25s ease;
+}
+
+.nav__label::after {
+  content: "";
+  display: block;
+  width: 1.2rem;
+  height: 2px;
+  margin: 0.25rem auto 0;
+  background-color: transparent;
+}
+
+.nav__item:hover {
+  color: #11D24B;
+}
+
+.nav__item:hover .icon {
+  filter: invert(65%) sepia(4%) saturate(8217%) hue-rotate(85deg) brightness(95%) contrast(101%);
+}
+
+.nav__item:hover .icon,
+.nav__item:hover .nav__label {
+  transform: translateY(-3px);
+}
+
+.nav__item--active {
+  color: #11D24B;
+  border-bottom-color: #625F6B;
+}
+
+.nav__item--active .icon {
+  filter: invert(65%) sepia(4%) saturate(8217%) hue-rotate(85deg) brightness(95%) contrast(101%);
+}
+
+.nav__item--active .nav__label::after {
+  background-color: #11D24B;
+}
+
+.help-btn {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #1c1b24;
+  color: #A6A2AE;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
