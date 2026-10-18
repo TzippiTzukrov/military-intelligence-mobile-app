@@ -1,4 +1,4 @@
-.cards  {
+.cards {
   color: #9895A1;
   width: 75%;
   margin: auto;
@@ -38,34 +38,34 @@
   margin: 20px 15px 15px 15px;
 }
 
-.card__top > .badge {
+.card__top>.badge {
   font-size: 10.5px;
   padding: 5px;
   border-radius: 4px;
 }
 
-.card__top > .badge--critical {
+.card__top>.badge--critical {
   background-color: #50122B;
   color: #A02C52;
   border: 1px #A02C52 solid;
 }
 
-.card__top > .badge--high {
+.card__top>.badge--high {
   background-color: #4B3407;
   color: #BD9D37;
-    border: 1px #BD9D37 solid;
+  border: 1px #BD9D37 solid;
 }
 
-.card__top > .badge--medium{
+.card__top>.badge--medium {
   background-color: #134424;
   color: #11D24B;
-    border: 1px #11D24B solid;
+  border: 1px #11D24B solid;
 }
 
 .card__status {
   color: #53505C;
   font-size: 10px;
-  font-weight:600;
+  font-weight: 600;
 }
 
 .card__title {
@@ -98,4 +98,38 @@
 .card__percent {
   font-size: 10.5px;
   color: #11D24B;
+}
+
+.threat {
+  position: relative;
+  width: 75%;
+  margin: 20px auto;
+  padding: 1rem;
+  background-color: #27111B;
+  border: 1px solid #89213C;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.threat:hover {
+  background-color: #351420;
+  transform: scaleX(1.02);
+}
+
+.threat__text {
+  color: #89213C;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  background-color: transparent;
+}
+
+.threat__dot {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.8rem;
+  width: 0.5rem;
+  height: 0.57rem;
+  border-radius: 50%;
+  background-color: #89213C;
 }
